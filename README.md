@@ -1,5 +1,3 @@
-# VUE 3 BOILERPLATE 🔥
-
 ## Project setup
 ```
 yarn install
