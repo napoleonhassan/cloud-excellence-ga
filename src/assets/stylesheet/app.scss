@@ -1,0 +1,76 @@
+@import './typography.scss';
+
+:root{
+  font-size: $font-size-base;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $app-background;
+  font-size: $font-size-base;
+  font-family: 'OpenSans';
+}
+
+#main {
+  width: $app-width;
+  margin: $app-margin;
+}
+
+.nav-wrapper {
+  padding: $app-nav-padding;
+  background-color: $app-nav-background;
+  
+  .nav-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: $app-width;
+  }
+
+  a {
+    &:visited,
+    &:hover {
+      color: #fff;
+    }
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+.form-wrapper {
+  .field-wrapper {
+    padding: 1rem 0;
+    textarea {
+      resize: none;
+      margin-top: 1rem;
+      width: 100%;
+      height: 6rem;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    padding: .25rem 0;
+    justify-content: flex-end;
+  }
+}
+
+.login-wrapper {
+  @extend .form-wrapper;
+  margin: auto;
+  max-width: 12rem;
+
+  .field-wrapper {
+    padding: .25rem 0;
+  }
+}
